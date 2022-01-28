@@ -12,9 +12,9 @@ jobs:
     - name: Downloading Ngrok.
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/4VmDzA7iaHb/ngrok-stable-windows-amd64.zip -OutFile ngrok.zip
-        Invoke-WebRequest https://raw.githubusercontent.com/johntechofficial/JohnTechFreeRDP/main/start.bat -OutFile start.bat
-        Invoke-WebRequest https://raw.githubusercontent.com/johntechofficial/JohnTechFreeRDP/main/wallpaper.jpg -OutFile wallpaper.jpg
-        Invoke-WebRequest https://raw.githubusercontent.com/johntechofficial/JohnTechFreeRDP/main/wallpaper.bat -OutFile wallpaper.bat
+        Invoke-WebRequest https://github.com/amirDEV/JohnTechFreeRDP/blob/78e1abd837e7b62d336084276e03aba8b6f50642/start.bat -OutFile start.bat
+        Invoke-WebRequest https://github.com/amirDEV/JohnTechFreeRDP/blob/78e1abd837e7b62d336084276e03aba8b6f50642/wallpaper.jpg -OutFile wallpaper.jpg
+        Invoke-WebRequest https://github.com/amirDEV/JohnTechFreeRDP/blob/78e1abd837e7b62d336084276e03aba8b6f50642/wallpaper.bat -OutFile wallpaper.bat
     - name: Extracting Ngrok Files.
       run: Expand-Archive ngrok.zip
     - name: Connecting to your Ngrok account.
@@ -34,5 +34,5 @@ jobs:
       run: cmd /c start.bat
     - name: RDP is ready!
       run: | 
-        Invoke-WebRequest https://raw.githubusercontent.com/Jin-Dev69/Test_Project1/main/Files/loop.bat -OutFile loop.bat
+        Invoke-WebRequest https://github.com/amirDEV/JohnTechFreeRDP/blob/78e1abd837e7b62d336084276e03aba8b6f50642/loop.ps1 -OutFile loop.ps1
         ./loop.ps1
